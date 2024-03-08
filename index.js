@@ -16,6 +16,11 @@ app.use(express.json())
 app.use(cors({ credentials: true }));
 app.use(cookieParser())
 
+
+app.get("/", (req, res) => {
+    res.send("Hello, world!");
+});
+
 app.use("/",userRouter)
 app.use("/admin",adminRouter)
 app.use("/test",(req, res) =>{
