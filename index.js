@@ -19,7 +19,7 @@ app.use(cookieParser())
 app.use("/",userRouter)
 app.use("/admin",adminRouter)
 app.use("/test",(req, res) =>{
-    res.send("suiii")
+    res.send("testing caseeeeeeeeeeeeeeeee")
 })
 
 
